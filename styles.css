@@ -163,6 +163,39 @@ body {
   font-size: 0.9rem;
 }
 
+/* Biklo Deals */
+.biklo-deals {
+  margin-top: 30px;
+  padding: 10px;
+  background: #f2faff;
+  border-radius: 8px;
+}
+
+.biklo-deals h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.deal-card {
+  background: white;
+  border-left: 4px solid #007aff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.deal-card h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.deal-card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
 /* WhatsApp Icon */
 .whatsapp {
   position: fixed;
