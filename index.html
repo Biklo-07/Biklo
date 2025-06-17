@@ -1,36 +1,53 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biklo</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }.logo {
-  text-align: center;
-}
+<!-- biklo-homepage.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIKLO - Becho, Kharido, Lelo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
 
-.logo img {
-  width: 200px;
-  height: auto;
-}
+  <!-- Sticky Header -->
+  <header class="header">
+    <div class="logo">BIKLO</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Buy Books</a>
+      <a href="#">Sell Books</a>
+      <a href="#">Rent Books</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </nav>
+    <div class="header-icons">
+      <input type="text" placeholder="Search" class="search-bar" />
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-user-circle"></i>
+    </div>
+  </header>
 
-.tagline {
-  font-family: Arial, sans-serif;
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  color: #333;
-}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Becho, Kharido, Lelo – Only on Biklo!</h1>
+      <p>Sell, buy, or rent books easily. Save money, save the planet.</p>
+      <div class="hero-buttons">
+        <button>Explore Books</button>
+        <button>Sell a Book</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- Use any modern illustration of people with books -->
+      <img src="hero-books.png" alt="People exchanging books" />
+    </div>
+  </section>
 
-  </style>
-</head><body>
-  <div class="logo">
-    <img src="logo.png" alt="Biklo Logo">
-    <div class="tagline">Jo bhi ho... BechKharido</div>
-  </div>
-</body></html>
+  <!-- Floating WhatsApp Icon -->
+  <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+      </html>
