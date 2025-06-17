@@ -301,6 +301,50 @@ body {
   cursor: pointer;
   }
 
+/* Contact Us */
+.contact-us {
+  margin-top: 30px;
+  padding: 15px;
+  background: #f9fbe7;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-us input,
+.contact-us textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.contact-us button {
+  background: #689f38;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-us a {
+  color: #33691e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 /* WhatsApp Icon */
 .whatsapp {
   position: fixed;
