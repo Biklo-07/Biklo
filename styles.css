@@ -1,3 +1,4 @@
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,28 +6,30 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #fff;
-  color: #111;
-  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #111111;
+  line-height: 1.5;
+  scroll-behavior: smooth;
 }
 
+/* Header */
 .mobile-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #252525;
   color: #fff;
-  padding: 10px 15px;
+  padding: 12px 16px;
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 1.4rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .hamburger {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -34,14 +37,16 @@ body {
 .mobile-nav {
   display: none;
   flex-direction: column;
-  background: #eee;
-  padding: 10px;
-  gap: 10px;
+  background: #f8f8f8;
+  padding: 12px;
+  gap: 12px;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
 }
 
 .mobile-nav a {
   text-decoration: none;
-  color: #252525;
+  color: #222;
   font-weight: 500;
 }
 
@@ -52,28 +57,37 @@ body {
 /* Hero */
 .hero {
   text-align: center;
-  padding: 20px 10px;
+  padding: 40px 15px 20px;
+  background: linear-gradient(to bottom, #f0f8ff, #ffffff);
 }
 
 .hero h1 {
   font-size: 1.6rem;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .hero p {
   font-size: 1rem;
   margin-bottom: 20px;
+  color: #444;
 }
 
 .hero button {
-  display: block;
-  margin: 10px auto;
+  margin: 8px auto;
   padding: 12px 24px;
-  background: #007aff;
+  background: linear-gradient(to right, #007aff, #0050ca);
   color: #fff;
   border: none;
   border-radius: 6px;
-  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 122, 255, 0.3);
 }
 
 .hero img {
@@ -82,54 +96,49 @@ body {
   max-width: 300px;
 }
 
-/* How It Works */
-.how-it-works {
-  margin-top: 30px;
-  padding: 10px;
-  background: #f7f7f7;
-  border-radius: 8px;
-  text-align: center;
+/* Section Spacing */
+section {
+  margin-top: 40px;
+  padding: 0 15px;
 }
 
-.how-it-works h2 {
-  margin-bottom: 15px;
+/* How It Works */
+.how-it-works h2,
+.featured-books h2,
+.biklo-deals h2,
+.sell-with-biklo h2,
+.why-biklo h2,
+.mobile-app h2,
+.contact-us h2 {
+  text-align: center;
   font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #111;
+  font-weight: 600;
 }
 
 .steps {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: center;
 }
 
 .step i {
   font-size: 2rem;
   color: #007aff;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .step p {
   font-size: 1rem;
-  margin: 0;
 }
 
-/* Featured Books */
-.featured-books {
-  margin-top: 30px;
-  padding: 10px;
-  background: #fefefe;
-}
-
-.featured-books h2 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
+/* Featured Books Carousel */
 .book-carousel {
   display: flex;
   overflow-x: auto;
-  gap: 12px;
+  gap: 16px;
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
 }
@@ -137,57 +146,52 @@ body {
 .book-card {
   flex: 0 0 auto;
   width: 140px;
-  background: #f4f4f4;
-  border-radius: 8px;
+  background: #f1f1f1;
+  border-radius: 10px;
   padding: 10px;
-  scroll-snap-align: start;
   text-align: center;
+  scroll-snap-align: start;
 }
 
 .book-card img {
   width: 100%;
   height: 120px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 6px;
   margin-bottom: 8px;
 }
 
 .book-card p {
-  font-size: 0.9rem;
-  margin: 5px 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin: 4px 0;
 }
 
 .book-card span {
-  font-weight: bold;
   color: #007aff;
+  font-weight: 600;
   font-size: 0.9rem;
 }
 
 /* Biklo Deals */
 .biklo-deals {
-  margin-top: 30px;
-  padding: 10px;
   background: #f2faff;
-  border-radius: 8px;
-}
-
-.biklo-deals h2 {
-  text-align: center;
-  font-size: 1.3rem;
-  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 15px;
 }
 
 .deal-card {
-  background: white;
+  background: #ffffff;
+  padding: 12px;
   border-left: 4px solid #007aff;
-  padding: 10px;
-  border-radius: 6px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   margin-bottom: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .deal-card h3 {
   font-size: 1rem;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
@@ -198,59 +202,40 @@ body {
 
 /* Sell With Biklo */
 .sell-with-biklo {
-  margin-top: 30px;
-  padding: 20px 10px;
-  background: #e8f5e9;
-  border-radius: 8px;
+  background: #e9fbe6;
+  padding: 20px;
+  border-radius: 10px;
   text-align: center;
-}
-
-.sell-with-biklo h2 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
 }
 
 .sell-with-biklo p {
   font-size: 0.95rem;
-  margin-bottom: 10px;
   color: #333;
+  margin-bottom: 10px;
 }
 
 .sell-with-biklo button {
   padding: 10px 20px;
   background: #2e7d32;
-  color: white;
-  font-size: 1rem;
   border: none;
+  color: white;
   border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
-  margin-top: 10px;
 }
 
-/* Why Choose Biklo */
-.why-biklo {
-  margin-top: 30px;
-  padding: 15px;
-  background: #fffdf4;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.why-biklo h2 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-}
-
+/* Why Biklo */
 .reasons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 16px;
+  text-align: center;
 }
 
 .reason {
-  background: #f7f7f7;
-  border-radius: 8px;
-  padding: 10px;
+  background: #fcf9ee;
+  padding: 12px;
+  border-radius: 10px;
 }
 
 .reason i {
@@ -259,66 +244,44 @@ body {
   margin-bottom: 6px;
 }
 
-.reason p {
-  font-size: 0.9rem;
-  margin: 0;
-}
-
-/* Mobile App Teaser */
+/* Mobile App */
 .mobile-app {
-  margin-top: 30px;
-  padding: 20px 10px;
   background: #e3f2fd;
-  border-radius: 8px;
+  padding: 20px;
+  border-radius: 10px;
   text-align: center;
 }
 
-.mobile-app h2 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-
-.mobile-app p {
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
 .mobile-app img {
-  width: 100%;
   max-width: 250px;
-  margin-bottom: 15px;
+  margin: 15px auto;
+  display: block;
   border-radius: 12px;
 }
 
 .mobile-app button {
-  padding: 10px 20px;
   background: #0288d1;
-  color: white;
   border: none;
-  border-radius: 6px;
+  padding: 10px 20px;
+  color: white;
   font-size: 1rem;
+  border-radius: 6px;
   cursor: pointer;
-  }
+}
 
 /* Contact Us */
 .contact-us {
-  margin-top: 30px;
-  padding: 15px;
   background: #f9fbe7;
-  border-radius: 8px;
+  padding: 20px;
+  border-radius: 10px;
   text-align: center;
-}
-
-.contact-us h2 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
 }
 
 .contact-us form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .contact-us input,
@@ -331,21 +294,21 @@ body {
 
 .contact-us button {
   background: #689f38;
-  color: white;
   border: none;
-  border-radius: 6px;
   padding: 10px;
+  color: white;
   font-size: 1rem;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 .contact-us a {
   color: #33691e;
-  text-decoration: none;
   font-weight: 500;
+  text-decoration: none;
 }
 
-/* WhatsApp Icon */
+/* WhatsApp Floating */
 .whatsapp {
   position: fixed;
   bottom: 20px;
@@ -361,12 +324,12 @@ body {
 
 /* Footer */
 .site-footer {
-  margin-top: 40px;
-  padding: 20px 10px;
   background: #252525;
-  color: #f5f5f5;
+  color: #eee;
+  padding: 20px 10px;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  border-top: 2px solid #111;
 }
 
 .footer-links {
@@ -382,13 +345,16 @@ body {
   text-decoration: none;
 }
 
-.social-icons a {
-  margin: 0 8px;
-  color: #ccc;
-  font-size: 1.2rem;
+.footer-links a:hover {
+  color: white;
 }
 
-.social-icons a:hover,
-.footer-links a:hover {
-  color: #fff;
+.social-icons a {
+  margin: 0 6px;
+  font-size: 1.2rem;
+  color: #ccc;
 }
+
+.social-icons a:hover {
+  color: #fff;
+  }
