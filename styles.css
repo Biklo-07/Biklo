@@ -227,6 +227,43 @@ body {
   margin-top: 10px;
 }
 
+/* Why Choose Biklo */
+.why-biklo {
+  margin-top: 30px;
+  padding: 15px;
+  background: #fffdf4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.why-biklo h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.reason {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.reason i {
+  font-size: 1.6rem;
+  color: #ff9800;
+  margin-bottom: 6px;
+}
+
+.reason p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
 /* WhatsApp Icon */
 .whatsapp {
   position: fixed;
