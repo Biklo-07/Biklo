@@ -10,23 +10,31 @@
 </head>
 <body>
 
-  <!-- Sticky Header -->
-  <header class="header">
-    <div class="logo.png"></div>
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Buy Books</a>
-      <a href="#">Sell Books</a>
-      <a href="#">Rent Books</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact</a>
-    </nav>
-    <div class="header-icons">
-      <input type="text" placeholder="Search" class="search-bar" />
-      <i class="fas fa-shopping-cart"></i>
-      <i class="fas fa-user-circle"></i>
-    </div>
-  </header>
+  <!-- Header -->
+<header class="header">
+  <div class="logo">BIKLO</div>
+
+  <!-- Hamburger Icon for Mobile -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Navigation Menu -->
+  <nav class="nav-links" id="navMenu">
+    <a href="#">Home</a>
+    <a href="#">Buy Books</a>
+    <a href="#">Sell Books</a>
+    <a href="#">Rent Books</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="header-icons">
+    <input type="text" class="search-bar" placeholder="Search" />
+    <i class="fas fa-shopping-cart"></i>
+    <i class="fas fa-user-circle"></i>
+  </div>
+</header>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -48,6 +56,13 @@
   <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
-
+  
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("navMenu");
+    menu.classList.toggle("nav-active");
+  }
+</script>
+  
 </body>
       </html>
