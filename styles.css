@@ -22,6 +22,43 @@ body {
   z-index: 10;
 }
 
+/* Hamburger Icon - hidden by default */
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: white;
+}
+
+/* Show hamburger + hide nav on small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #252525;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 9;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* When menu is toggled */
+.nav-active {
+  display: flex !important;
+}
+
 .logo {
   font-size: 1.5em;
   font-weight: bold;
