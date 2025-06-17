@@ -1,68 +1,50 @@
-<!-- biklo-homepage.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BIKLO - Becho, Kharido, Lelo</title>
+  <title>BIKLO - Mobile</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
   <!-- Header -->
-<header class="header">
-  <div class="logo">BIKLO</div>
+  <header class="mobile-header">
+    <div class="logo">BIKLO</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
 
-  <!-- Hamburger Icon for Mobile -->
-  <div class="hamburger" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
-  </div>
-
-  <!-- Navigation Menu -->
-  <nav class="nav-links" id="navMenu">
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="navMenu">
     <a href="#">Home</a>
-    <a href="#">Buy Books</a>
-    <a href="#">Sell Books</a>
-    <a href="#">Rent Books</a>
-    <a href="#">About Us</a>
+    <a href="#">Buy</a>
+    <a href="#">Sell</a>
+    <a href="#">Rent</a>
+    <a href="#">About</a>
     <a href="#">Contact</a>
   </nav>
 
-  <div class="header-icons">
-    <input type="text" class="search-bar" placeholder="Search" />
-    <i class="fas fa-shopping-cart"></i>
-    <i class="fas fa-user-circle"></i>
-  </div>
-</header>
-
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Becho, Kharido, Lelo – Only on Biklo!</h1>
-      <p>Sell, buy, or rent books easily. Save money, save the planet.</p>
-      <div class="hero-buttons">
-        <button>Explore Books</button>
-        <button>Sell a Book</button>
-      </div>
-    </div>
-    <div class="hero-image">
-      <!-- Use any modern illustration of people with books -->
-      <img src="hero-books.png" alt="People exchanging books" />
-    </div>
+    <h1>Becho, Kharido, Lelo – Only on Biklo!</h1>
+    <p>Sell, buy, or rent books easily. Save money, save the planet.</p>
+    <button>Explore Books</button>
+    <button>Sell a Book</button>
+    <img src="hero-books.png" alt="Books illustration" />
   </section>
 
-  <!-- Floating WhatsApp Icon -->
-  <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank">
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">
     <i class="fab fa-whatsapp"></i>
   </a>
-  
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("navMenu");
-    menu.classList.toggle("nav-active");
-  }
-</script>
-  
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("open");
+    }
+  </script>
 </body>
-      </html>
+</html>
