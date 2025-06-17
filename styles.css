@@ -113,6 +113,56 @@ body {
   margin: 0;
 }
 
+/* Featured Books */
+.featured-books {
+  margin-top: 30px;
+  padding: 10px;
+  background: #fefefe;
+}
+
+.featured-books h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.book-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.book-card {
+  flex: 0 0 auto;
+  width: 140px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 10px;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.book-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.book-card p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.book-card span {
+  font-weight: bold;
+  color: #007aff;
+  font-size: 0.9rem;
+}
+
 /* WhatsApp Icon */
 .whatsapp {
   position: fixed;
